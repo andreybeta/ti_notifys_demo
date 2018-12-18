@@ -125,7 +125,7 @@ btn4.addEventListener('click', function () {
 
 	var intent = Ti.Android.createIntent({
 		action: Ti.Android.ACTION_MAIN,
-		className: 'com.andreybeta.notifysdemo.NotifysdemoapplicationActivity',
+		className: 'com.andreybeta.notifysdemo.NotifysdemoActivity',
 		packageName: 'com.andreybeta.notifysdemo'
 	});
 
