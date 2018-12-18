@@ -125,10 +125,8 @@ btn4.addEventListener('click', function () {
 
 	var intent = Ti.Android.createIntent({
 		action: Ti.Android.ACTION_MAIN,
-		// Substitute the correct class name for your application
-		className: 'com.andreybeta.notifysdemo.MobijobApplication',
-		// Substitue the correct package name for your application
-		packageName: 'NotifysDemoApplication'
+		className: 'com.andreybeta.notifysdemo.NotifysdemoapplicationActivity',
+		packageName: 'com.andreybeta.notifysdemo'
 	});
 
 	intent.flags |= Ti.Android.FLAG_ACTIVITY_CLEAR_TOP | Ti.Android.FLAG_ACTIVITY_NEW_TASK;
