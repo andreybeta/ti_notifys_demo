@@ -1,7 +1,7 @@
 <Alloy>
 	<Window class="container" layout="vertical">
 		<Label id="label" onClick="doClick">Hello, World</Label>
-		<ImageView id="image" top="20"/>
+		<ImageView id="image" onClick="doClick" top="20"/>
 
 	</Window>
 </Alloy>
