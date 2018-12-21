@@ -62,7 +62,7 @@ function startPerformance() {
 	// notifications when app is in the background
 	fcm.createNotificationChannel({
 		sound: 'warn_sound',
-		channelId: 'general',
+		channelId: 'default',
 		channelName: 'General Notifications',
 		importance: 'high' //will pop in from the top and make a sound
 	});
@@ -75,7 +75,7 @@ function startPerformance() {
 	}
 
 	// subscribe to topic
-	fcm.subscribeToTopic('testTopic');
+	// fcm.subscribeToTopic('testTopic');
 }
 
 function doClick(e) {

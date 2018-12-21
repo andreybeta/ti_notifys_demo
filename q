@@ -1,0 +1,41 @@
+[33mcommit 6fd047e3916dcd11848a75fe921e024ac6f8c04a[m[33m ([m[1;36mHEAD -> [m[1;32mfirebase_implementation[m[33m, [m[1;31morigin/firebase_implementation[m[33m)[m
+Author: BetoRincon <aluisrincon@unisangil.edu.co>
+Date:   Fri Dec 21 12:07:09 2018 -0500
+
+    firebase implementation
+
+[33mcommit ed272d4b7176de53d7f83b1c4e03d0299b4a0eca[m
+Author: BetoRincon <aluisrincon@unisangil.edu.co>
+Date:   Wed Dec 19 13:37:44 2018 -0500
+
+    google sercive json
+
+[33mcommit c1a137364636fde7bfe247f86338086fcc8e632f[m[33m ([m[1;31morigin/custom_layout_implementation[m[33m, [m[1;32mcustom_layout_implementation[m[33m)[m
+Author: BetoRincon <aluisrincon@unisangil.edu.co>
+Date:   Mon Dec 17 12:20:44 2018 -0500
+
+    add background to Linearlayout
+
+[33mcommit 6675fc0cff58123a2cc44fe4be8a88b854680209[m
+Author: BetoRincon <aluisrincon@unisangil.edu.co>
+Date:   Fri Dec 14 16:32:05 2018 -0500
+
+    custom
+
+[33mcommit bb7b029c773335c05ea328ef286083a157d27771[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: BetoRincon <aluisrincon@unisangil.edu.co>
+Date:   Fri Dec 14 12:49:48 2018 -0500
+
+    custom layput notification
+
+[33mcommit 085870c94864fbbebe426a19242ecbf08aab687e[m
+Author: Andrey Salas <andrey.salas@gmail.com>
+Date:   Wed Dec 12 15:01:23 2018 -0500
+
+    First commit
+
+[33mcommit d2e69c8196163fa96de07701d27b1201536e90e9[m
+Author: Andrey S <andrey.salas@gmail.com>
+Date:   Wed Dec 12 14:58:42 2018 -0500
+
+    Initial commit

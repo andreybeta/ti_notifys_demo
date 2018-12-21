@@ -44,7 +44,7 @@
 	<android xmlns:android="http://schemas.android.com/apk/res/android">
 		<manifest>
 			<application>
-				<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notificationgit icon"/>
+				<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notificationicon"/>
 
 
 				<service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false" />
