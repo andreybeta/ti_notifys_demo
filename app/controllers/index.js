@@ -1,22 +1,11 @@
 const FirebaseCore = require('firebase.core');
 const fcm = require('firebase.cloudmessaging');
 const FirebaseAnalytics = require('firebase.analytics');
-
+const FirebaseConfiguration = require('/firebase_configuration');
 
 $.image.image = Ti.App.Android.R.drawable.btn_more_192;
 
 function startAnalytics() {
-
-	// Configure Firebase
-	// FirebaseCore.configure({
-	// 	APIKey: "AIzaSyCPp5TS9ckTTbnJwowL9wWmiMCYm1QA8-w",
-	// 	googleAppID: 'aesthetic-guild-226115',
-	// 	GCMSenderID: '749426280330',
-	// 	projectID: "test-b6ca1",
-	// 	storageBucket: "test-b6ca1.appspot.com",
-	// 	applicationID: "1:8903486192:android:c6fb5b9095fccdb8"
-	// });
-
 	FirebaseCore.configure();
 	// Get the App Instance ID
 	// Ti.API.info('App Instance ID: ' + JSON.stringify(FirebaseAnalytics));
@@ -25,7 +14,6 @@ function startAnalytics() {
 	FirebaseAnalytics.log('My_event', {
 		'Custom_method': 'arrancó la vuelta'
 	});
-
 }
 
 function startPerformance() {
@@ -33,14 +21,19 @@ function startPerformance() {
 
 
 	// Configure core module (required for all Firebase modules)
-	FirebaseCore.configure({
-		APIKey: "AIzaSyCPp5TS9ckTTbnJwowL9wWmiMCYm1QA8-w",
-		googleAppID: 'aesthetic-guild-226115',
-		GCMSenderID: '749426280330',
-		projectID: "test-b6ca1",
-		storageBucket: "test-b6ca1.appspot.com",
-		applicationID: "1:8903486192:android:c6fb5b9095fccdb8"
-	});
+
+	let configObject = {
+		APIKey: FirebaseConfiguration.getApiKey(),
+		googleAppID: FirebaseConfiguration.getGoogleAppID(),
+		GCMSenderID: FirebaseConfiguration.getGCMSenderID(),
+		projectID: FirebaseConfiguration.getProjectID(),
+		storageBucket: FirebaseConfiguration.getStorageBucket(),
+		applicationID: FirebaseConfiguration.getApplicationID()
+	}
+
+	console.info('configObject: ', JSON.stringify(configObject));
+
+	FirebaseCore.configure(configObject);
 
 	// Called when the Firebase token is ready
 	fcm.addEventListener('didRefreshRegistrationToken', onToken);

@@ -11,3 +11,5 @@ tmp
 .settings
 Thumbs.db
 plugins/ti.alloy
+/app/assests/android/google-services.json
+/app/lib/secrets.js
